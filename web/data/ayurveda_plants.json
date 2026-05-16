@@ -1,0 +1,618 @@
+{
+  "Ocimum tenuiflorum": {
+    "sanskrit_name": "Tulasi",
+    "local_name_hi": "तुलसी",
+    "dosha": "Balances Vata and Kapha",
+    "benefits": [
+      "Boosts immunity and fights infections",
+      "Relieves respiratory issues (cold, cough, asthma)",
+      "Reduces fever and inflammation",
+      "Improves digestion and gut health",
+      "Adaptogen — reduces stress and anxiety"
+    ],
+    "properties": "Bitter, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Sacred plant in Hindu tradition; used in Ayurveda for 3000+ years"
+  },
+  "Azadirachta indica": {
+    "sanskrit_name": "Nimba",
+    "local_name_hi": "नीम",
+    "dosha": "Pacifies Pitta and Kapha",
+    "benefits": [
+      "Powerful antibacterial and antifungal",
+      "Purifies blood and detoxifies body",
+      "Treats skin conditions (acne, eczema)",
+      "Supports liver and digestive health",
+      "Natural pesticide and wound healer"
+    ],
+    "properties": "Bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Known as 'village pharmacy' in India"
+  },
+  "Aloe vera": {
+    "sanskrit_name": "Kumari",
+    "local_name_hi": "घृत कुमारी",
+    "dosha": "Balances all three Doshas (Tridoshic)",
+    "benefits": [
+      "Soothes burns, wounds, and skin irritation",
+      "Promotes digestion and relieves constipation",
+      "Boosts immunity and reduces inflammation",
+      "Supports healthy hair and skin",
+      "Helps regulate blood sugar levels"
+    ],
+    "properties": "Bitter, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Used in Ayurvedic skincare and digestive remedies for centuries"
+  },
+  "Withania somnifera": {
+    "sanskrit_name": "Ashwagandha",
+    "local_name_hi": "अश्वगंधा",
+    "dosha": "Balances Vata and Kapha; may increase Pitta in excess",
+    "benefits": [
+      "Powerful adaptogen for stress relief",
+      "Boosts energy and physical stamina",
+      "Supports cognitive function and memory",
+      "Enhances immune response",
+      "Promotes restful sleep and relaxation"
+    ],
+    "properties": "Bitter, astringent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Revered as a Rasayana (rejuvenative tonic) in Ayurveda"
+  },
+  "Curcuma longa": {
+    "sanskrit_name": "Haridra",
+    "local_name_hi": "हल्दी",
+    "dosha": "Balances all three Doshas",
+    "benefits": [
+      "Potent anti-inflammatory and antioxidant",
+      "Supports joint health and mobility",
+      "Aids digestion and liver function",
+      "Enhances skin complexion and wound healing",
+      "Boosts immune system"
+    ],
+    "properties": "Bitter, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Sacred spice in Indian cuisine and medicine for over 4000 years"
+  },
+  "Emblica officinalis": {
+    "sanskrit_name": "Amalaki",
+    "local_name_hi": "आंवला",
+    "dosha": "Balances all three Doshas (Tridoshic)",
+    "benefits": [
+      "Richest natural source of Vitamin C",
+      "Rejuvenates hair, skin, and eyes",
+      "Strengthens digestion and absorption",
+      "Supports heart and liver health",
+      "Enhances immunity and longevity"
+    ],
+    "properties": "Sour, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Key ingredient in Chyawanprash; one of the most important Rasayanas"
+  },
+  "Tinospora cordifolia": {
+    "sanskrit_name": "Guduchi",
+    "local_name_hi": "गिलोय",
+    "dosha": "Balances all three Doshas",
+    "benefits": [
+      "Powerful immune modulator",
+      "Detoxifies liver and blood",
+      "Reduces fever and inflammation",
+      "Supports digestive health",
+      "Rejuvenates tissues and promotes longevity"
+    ],
+    "properties": "Bitter, astringent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Called 'Amrita' (nectar of immortality) in Ayurvedic texts"
+  },
+  "Bacopa monnieri": {
+    "sanskrit_name": "Brahmi",
+    "local_name_hi": "ब्राह्मी",
+    "dosha": "Balances Vata and Pitta; may increase Kapha",
+    "benefits": [
+      "Enhances memory and cognitive function",
+      "Reduces anxiety and mental fatigue",
+      "Supports nervous system health",
+      "Promotes restful sleep",
+      "Antioxidant and anti-inflammatory"
+    ],
+    "properties": "Bitter, astringent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Used as a Medhya Rasayana (brain tonic) for thousands of years"
+  },
+  "Centella asiatica": {
+    "sanskrit_name": "Mandukaparni",
+    "local_name_hi": "मंडूकपर्णी",
+    "dosha": "Balances Kapha and Pitta; may increase Vata",
+    "benefits": [
+      "Improves memory and concentration",
+      "Promotes wound healing and skin health",
+      "Reduces anxiety and stress",
+      "Supports circulatory system",
+      "Anti-aging and rejuvenating"
+    ],
+    "properties": "Bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Known as 'Gotu Kola'; revered for mental clarity and longevity"
+  },
+  "Glycyrrhiza glabra": {
+    "sanskrit_name": "Yashtimadhu",
+    "local_name_hi": "मुलेठी",
+    "dosha": "Balances Vata and Pitta; may increase Kapha",
+    "benefits": [
+      "Soothes throat and respiratory tract",
+      "Supports digestive and adrenal health",
+      "Anti-inflammatory and immune boosting",
+      "Promotes healthy skin and hair",
+      "Natural sweetener with medicinal properties"
+    ],
+    "properties": "Sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Used in countless Ayurvedic formulations as a harmonizing agent"
+  },
+  "Terminalia chebula": {
+    "sanskrit_name": "Haritaki",
+    "local_name_hi": "हरड़",
+    "dosha": "Balances all three Doshas (Tridoshic)",
+    "benefits": [
+      "Promotes digestion and elimination",
+      "Detoxifies and rejuvenates tissues",
+      "Supports respiratory health",
+      "Enhances cognitive function",
+      "Natural antioxidant and longevity promoter"
+    ],
+    "properties": "All five tastes (sweet, sour, salty, pungent, bitter, astringent); heating potency",
+    "traditional_use": "Called the 'King of Medicines' in Tibetan medicine; cornerstone of Triphala"
+  },
+  "Terminalia bellirica": {
+    "sanskrit_name": "Bibhitaki",
+    "local_name_hi": "बहेड़ा",
+    "dosha": "Balances Kapha and Pitta",
+    "benefits": [
+      "Supports respiratory health and clears mucus",
+      "Promotes healthy vision and hair",
+      "Strengthens voice and throat",
+      "Aids digestion and detoxification",
+      "Rejuvenates tissues"
+    ],
+    "properties": "Astringent taste; heating potency (Ushna Virya)",
+    "traditional_use": "One of the three fruits in the famous Triphala formulation"
+  },
+  "Commiphora wightii": {
+    "sanskrit_name": "Guggulu",
+    "local_name_hi": "गugal",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Supports healthy cholesterol and weight",
+      "Promotes joint and muscle health",
+      "Detoxifies deep tissues",
+      "Enhances circulation",
+      "Rejuvenates and strengthens the body"
+    ],
+    "properties": "Bitter, pungent, astringent taste; heating potency (Ushna Virya)",
+    "traditional_use": "One of the most important resinous medicines in Ayurveda"
+  },
+  "Piper longum": {
+    "sanskrit_name": "Pippali",
+    "local_name_hi": "पippali",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Enhances digestion and metabolism",
+      "Supports respiratory health",
+      "Boosts bioavailability of other herbs",
+      "Rejuvenates lungs and respiratory system",
+      "Promotes healthy weight management"
+    ],
+    "properties": "Pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in Trikatu; renowned for deep tissue penetration"
+  },
+  "Zingiber officinale": {
+    "sanskrit_name": "Ardraka",
+    "local_name_hi": "अदरक",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Stimulates digestion and alleviates nausea",
+      "Supports respiratory health",
+      "Reduces inflammation and pain",
+      "Boosts circulation and immunity",
+      "Promotes healthy metabolism"
+    ],
+    "properties": "Pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Universal medicine in Ayurveda; used fresh and dried (Shunthi)"
+  },
+  "Cinnamomum verum": {
+    "sanskrit_name": "Tvak",
+    "local_name_hi": "दालचीनी",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Supports healthy blood sugar levels",
+      "Improves digestion and circulation",
+      "Antimicrobial and immune boosting",
+      "Enhances cognitive function",
+      "Warming spice for respiratory comfort"
+    ],
+    "properties": "Sweet, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used as a warming digestive and circulatory tonic"
+  },
+  "Syzygium aromaticum": {
+    "sanskrit_name": "Lavanga",
+    "local_name_hi": "लौंग",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Relieves toothache and oral issues",
+      "Improves digestion and reduces bloating",
+      "Antimicrobial and immune supporting",
+      "Enhances respiratory health",
+      "Natural analgesic and warming agent"
+    ],
+    "properties": "Pungent, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in dental care and digestive formulations for millennia"
+  },
+  "Trigonella foenum-graecum": {
+    "sanskrit_name": "Methika",
+    "local_name_hi": "मेथी",
+    "dosha": "Balances Kapha and Vata; may increase Pitta",
+    "benefits": [
+      "Supports healthy blood sugar levels",
+      "Enhances digestion and reduces cholesterol",
+      "Promotes lactation in nursing mothers",
+      "Supports hair health",
+      "Anti-inflammatory and antioxidant"
+    ],
+    "properties": "Bitter, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Staple in Indian cuisine and Ayurvedic medicine"
+  },
+  "Moringa oleifera": {
+    "sanskrit_name": "Shigru",
+    "local_name_hi": "सहजन",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Highly nutritious — rich in vitamins and minerals",
+      "Supports healthy inflammation response",
+      "Promotes healthy blood sugar and cholesterol",
+      "Detoxifies and purifies blood",
+      "Supports joint and bone health"
+    ],
+    "properties": "Pungent, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Called 'Drumstick Tree' and 'Miracle Tree' for its exceptional nutrition"
+  },
+  "Cocos nucifera": {
+    "sanskrit_name": "Narikela",
+    "local_name_hi": "नारियल",
+    "dosha": "Balances Pitta and Vata; may increase Kapha",
+    "benefits": [
+      "Hydrates and nourishes tissues",
+      "Supports healthy skin and hair",
+      "Promotes digestion and gut health",
+      "Boosts energy and metabolism",
+      "Cooling and calming to the body"
+    ],
+    "properties": "Sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Sacred in Indian culture; every part of the tree is utilized"
+  },
+  "Ficus religiosa": {
+    "sanskrit_name": "Ashvattha",
+    "local_name_hi": "पीपल",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Supports respiratory health",
+      "Promotes healthy skin and wound healing",
+      "Aids digestion",
+      "Antimicrobial and antioxidant",
+      "Supports oral health"
+    ],
+    "properties": "Astringent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Sacred tree in Hinduism and Buddhism; bark and leaves used medicinally"
+  },
+  "Boerhavia diffusa": {
+    "sanskrit_name": "Punarnava",
+    "local_name_hi": "पुनर्नवा",
+    "dosha": "Balances Kapha and Vata; may increase Pitta",
+    "benefits": [
+      "Supports kidney and urinary health",
+      "Reduces fluid retention and swelling",
+      "Promotes liver health and detoxification",
+      "Anti-inflammatory and diuretic",
+      "Rejuvenates tissues (Rasayana)"
+    ],
+    "properties": "Bitter, sweet taste; heating potency (Ushna Virya)",
+    "traditional_use": "Name means 'that which renews'; famous for regeneration of cells"
+  },
+  "Santalum album": {
+    "sanskrit_name": "Chandana",
+    "local_name_hi": "चंदन",
+    "dosha": "Balances Pitta and Vata; may increase Kapha",
+    "benefits": [
+      "Cools and calms the mind and body",
+      "Promotes healthy, clear skin",
+      "Supports urinary and digestive health",
+      "Relieves anxiety and promotes meditation",
+      "Antimicrobial and anti-inflammatory"
+    ],
+    "properties": "Bitter, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Sacred in Indian rituals; prized for its fragrance and medicinal properties"
+  },
+  "Nardostachys jatamansi": {
+    "sanskrit_name": "Jatamansi",
+    "local_name_hi": "जटामांसी",
+    "dosha": "Balances all three Doshas; especially Vata and Pitta",
+    "benefits": [
+      "Calms the mind and promotes restful sleep",
+      "Supports cognitive function and memory",
+      "Promotes healthy skin and hair",
+      "Cardiac tonic and stress reliever",
+      "Antioxidant and neuroprotective"
+    ],
+    "properties": "Bitter, astringent, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Highly valued aromatic root used for meditation and tranquility"
+  },
+  "Asparagus racemosus": {
+    "sanskrit_name": "Shatavari",
+    "local_name_hi": "शतावरी",
+    "dosha": "Balances Pitta and Vata; may increase Kapha",
+    "benefits": [
+      "Rejuvenates female reproductive system",
+      "Supports lactation and hormonal balance",
+      "Soothes digestive tract and ulcers",
+      "Boosts immunity and vitality",
+      "Adaptogenic and anti-inflammatory"
+    ],
+    "properties": "Sweet, bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Primary women's health tonic in Ayurveda; means 'she who possesses a hundred husbands'"
+  },
+  "Convolvulus pluricaulis": {
+    "sanskrit_name": "Shankhapushpi",
+    "local_name_hi": "शंखपुष्पी",
+    "dosha": "Balances all three Doshas; especially Vata and Pitta",
+    "benefits": [
+      "Enhances memory and cognitive function",
+      "Reduces anxiety and mental stress",
+      "Promotes restful sleep",
+      "Supports nervous system health",
+      "Rejuvenates the mind"
+    ],
+    "properties": "Bitter, pungent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Iconic Medhya Rasayana (brain tonic) for students and scholars"
+  },
+  "Coleus forskohlii": {
+    "sanskrit_name": "Makandi",
+    "local_name_hi": "मakandi",
+    "dosha": "Balances Kapha and Vata",
+    "benefits": [
+      "Supports healthy weight management",
+      "Promotes cardiovascular health",
+      "Supports respiratory function",
+      "Enhances metabolism",
+      "Anti-inflammatory and antioxidant"
+    ],
+    "properties": "Pungent, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in Ayurveda for respiratory and heart conditions"
+  },
+  "Swertia chirata": {
+    "sanskrit_name": "Kiratatikta",
+    "local_name_hi": "चिरायता",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Supports liver health and detoxification",
+      "Reduces fever and infections",
+      "Promotes healthy digestion",
+      "Blood purifier and skin health",
+      "Anti-parasitic and antimicrobial"
+    ],
+    "properties": "Extremely bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "One of the most bitter Ayurvedic herbs; used in fever management"
+  },
+  "Andrographis paniculata": {
+    "sanskrit_name": "Kalamegha",
+    "local_name_hi": "कालमेघ",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Supports liver and immune health",
+      "Reduces fever and infections",
+      "Promotes healthy digestion",
+      "Detoxifies blood and skin",
+      "Anti-inflammatory and antiviral"
+    ],
+    "properties": "Bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Called 'King of Bitters'; widely used for immunity and liver support"
+  },
+  "Phyllanthus niruri": {
+    "sanskrit_name": "Bhumyamalaki",
+    "local_name_hi": "भूम्यामलकी",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Supports liver and kidney health",
+      "Promotes healthy digestion",
+      "Detoxifies and purifies blood",
+      "Supports healthy blood sugar",
+      "Antiviral and hepatoprotective"
+    ],
+    "properties": "Bitter, astringent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Revered for liver support and stone-breaking properties"
+  },
+  "Adhatoda vasica": {
+    "sanskrit_name": "Vasaka",
+    "local_name_hi": "अडूसा",
+    "dosha": "Balances Kapha and Pitta",
+    "benefits": [
+      "Supports respiratory health and clears mucus",
+      "Relieves cough and asthma",
+      "Promotes healthy blood pressure",
+      "Anti-inflammatory and antimicrobial",
+      "Supports digestive health"
+    ],
+    "properties": "Bitter, astringent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Primary herb for respiratory conditions in Ayurveda"
+  },
+  "Acorus calamus": {
+    "sanskrit_name": "Vacha",
+    "local_name_hi": "वच",
+    "dosha": "Balances Kapha and Vata; may increase Pitta",
+    "benefits": [
+      "Enhances speech and cognitive clarity",
+      "Supports digestive health",
+      "Relieves anxiety and nervous disorders",
+      "Promotes healthy appetite",
+      "Anti-spasmodic and carminative"
+    ],
+    "properties": "Bitter, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used for improving speech, memory, and mental clarity since ancient times"
+  },
+  "Cassia fistula": {
+    "sanskrit_name": "Aragvadha",
+    "local_name_hi": "अमलतास",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Natural laxative and colon cleanser",
+      "Supports skin health and wound healing",
+      "Purifies blood",
+      "Promotes healthy digestion",
+      "Antimicrobial and anti-inflammatory"
+    ],
+    "properties": "Sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "State flower of Kerala; bark and pulp widely used in medicine"
+  },
+  "Psidium guajava": {
+    "sanskrit_name": "Peruka",
+    "local_name_hi": "अमरूद",
+    "dosha": "Balances Vata and Pitta; may increase Kapha",
+    "benefits": [
+      "Supports digestive health and relieves diarrhea",
+      "Rich in Vitamin C and antioxidants",
+      "Promotes healthy skin and wound healing",
+      "Supports oral health",
+      "Boosts immunity"
+    ],
+    "properties": "Astringent, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Leaves used traditionally for digestive and oral health"
+  },
+  "Carica papaya": {
+    "sanskrit_name": "Erandakarkati",
+    "local_name_hi": "पपीता",
+    "dosha": "Balances Vata and Kapha; may increase Pitta",
+    "benefits": [
+      "Supports digestion with natural enzymes",
+      "Promotes healthy skin and wound healing",
+      "Rich in antioxidants and vitamins",
+      "Supports heart health",
+      "Anti-parasitic and immune boosting"
+    ],
+    "properties": "Sweet, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Every part of the plant is used; seeds used for digestive health"
+  },
+  "Mangifera indica": {
+    "sanskrit_name": "Amra",
+    "local_name_hi": "आम",
+    "dosha": "Balances Vata; ripe fruit balances Pitta",
+    "benefits": [
+      "Rich in vitamins and antioxidants",
+      "Supports digestion and immunity",
+      "Promotes healthy skin and eyes",
+      "Anti-inflammatory properties",
+      "Cooling and nourishing to the body"
+    ],
+    "properties": "Sweet, astringent taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "National fruit of India; bark and leaves used medicinally"
+  },
+  "Murraya koenigii": {
+    "sanskrit_name": "Surabhinimba",
+    "local_name_hi": "कड़ी पत्ता",
+    "dosha": "Balances Kapha and Vata",
+    "benefits": [
+      "Supports healthy blood sugar levels",
+      "Promotes digestion and reduces nausea",
+      "Rich in antioxidants",
+      "Supports hair health",
+      "Anti-inflammatory and antimicrobial"
+    ],
+    "properties": "Pungent, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Essential in South Indian cuisine; leaves valued for medicinal properties"
+  },
+  "Momordica charantia": {
+    "sanskrit_name": "Karavellaka",
+    "local_name_hi": "करेला",
+    "dosha": "Balances Kapha and Pitta; may aggravate Vata",
+    "benefits": [
+      "Supports healthy blood sugar levels",
+      "Promotes digestion and liver health",
+      "Purifies blood and skin",
+      "Boosts immunity",
+      "Antioxidant and anti-inflammatory"
+    ],
+    "properties": "Bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Widely used vegetable and medicine for diabetes management"
+  },
+  "Solanum nigrum": {
+    "sanskrit_name": "Kakamachi",
+    "local_name_hi": "मकोय",
+    "dosha": "Balances Pitta and Kapha; may increase Vata",
+    "benefits": [
+      "Supports liver health and detoxification",
+      "Promotes healthy skin",
+      "Reduces fever and inflammation",
+      "Supports oral health",
+      "Diuretic and laxative properties"
+    ],
+    "properties": "Bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in traditional medicine for liver disorders and skin conditions"
+  },
+  "Rosa centifolia": {
+    "sanskrit_name": "Shatapatra",
+    "local_name_hi": "गुलाब",
+    "dosha": "Balances Pitta and Vata; may increase Kapha",
+    "benefits": [
+      "Cools and soothes the mind and body",
+      "Promotes healthy, glowing skin",
+      "Supports digestive health",
+      "Relieves stress and anxiety",
+      "Anti-inflammatory and astringent"
+    ],
+    "properties": "Bitter, astringent, sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Used in Ayurvedic beauty preparations and calming therapies"
+  },
+  "Lawsonia inermis": {
+    "sanskrit_name": "Madayantika",
+    "local_name_hi": "मेहंदी",
+    "dosha": "Balances Pitta and Kapha",
+    "benefits": [
+      "Cools the body and reduces heat",
+      "Promotes healthy hair and skin",
+      "Antimicrobial and antifungal",
+      "Supports wound healing",
+      "Natural dye with cooling properties"
+    ],
+    "properties": "Bitter taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Used for hair care, cooling the body, and ornamental purposes"
+  },
+  "Plantago ovata": {
+    "sanskrit_name": "Isabgol",
+    "local_name_hi": "इसबगोल",
+    "dosha": "Balances Pitta and Kapha; may increase Vata if dry",
+    "benefits": [
+      "Promotes healthy digestion and regularity",
+      "Supports healthy cholesterol levels",
+      "Soothes and cleanses the digestive tract",
+      "Helps manage blood sugar",
+      "Natural bulk-forming fiber"
+    ],
+    "properties": "Sweet taste; cooling potency (Sheeta Virya)",
+    "traditional_use": "Most popular natural laxative and fiber supplement in India"
+  },
+  "Embelia ribes": {
+    "sanskrit_name": "Vidanga",
+    "local_name_hi": "विडंग",
+    "dosha": "Balances Kapha and Vata; may increase Pitta",
+    "benefits": [
+      "Natural vermifuge (expels worms)",
+      "Promotes digestion and appetite",
+      "Supports healthy metabolism",
+      "Anti-microbial and skin health",
+      "Rejuvenates digestive fire"
+    ],
+    "properties": "Pungent, bitter taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in Ayurveda for deworming and digestive health"
+  },
+  "Operculina turpethum": {
+    "sanskrit_name": "Trivrit",
+    "local_name_hi": "तिव्रित",
+    "dosha": "Balances Kapha and Pitta; may increase Vata",
+    "benefits": [
+      "Natural purgative and colon cleanser",
+      "Supports liver health and detoxification",
+      "Reduces swelling and fluid retention",
+      "Anti-inflammatory",
+      "Promotes healthy skin"
+    ],
+    "properties": "Bitter, pungent taste; heating potency (Ushna Virya)",
+    "traditional_use": "Used in Panchakarma therapies for cleansing and detoxification"
+  }
+}

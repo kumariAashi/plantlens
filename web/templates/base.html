@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PlantLens{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        surface: '#FFFFFF',
+                        background: '#F8FAF8',
+                        muted: '#6B7280',
+                        toxic: '#DC2626',
+                        safe: '#16A34A',
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-background text-[#1C1C1C] font-body min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-surface border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="{{ url_for('index') }}" class="flex items-center gap-2 group">
+                <svg class="w-7 h-7 text-accent transition-transform group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,13.37,11,10,17,8Z"/>
+                </svg>
+                <span class="font-display text-xl font-bold text-primary">PlantLens</span>
+            </a>
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <a href="{{ url_for('index') }}" class="text-primary hover:text-accent transition-colors">Home</a>
+                <a href="{{ url_for('history.history') }}" class="text-muted hover:text-primary transition-colors">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-12">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-gray-100 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between text-xs text-muted">
+            <span>PlantLens &copy; {{ now().year if now else '2026' }}</span>
+            <span>Powered by PlantNet API</span>
+        </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

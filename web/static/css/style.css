@@ -1,0 +1,46 @@
+/* Custom styles on top of Tailwind */
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Drop zone drag state */
+#drop-zone.drag-over {
+    border-color: #52B788;
+    background-color: #F0FDF4;
+    box-shadow: 0 0 30px rgba(82, 183, 136, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #F8FAF8;
+}
+::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9CA3AF;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Fade in for image preview */
+#preview-img {
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure video fills container */
+#camera-video {
+    object-fit: cover;
+}
