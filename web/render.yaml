@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: plantlens-web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PLANTNET_API_KEY
+        sync: false
+      - key: PERENUAL_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false

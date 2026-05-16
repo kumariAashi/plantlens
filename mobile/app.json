@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "PlantLens",
+    "slug": "plantlens",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "plantlens",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F1F8F1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "PlantLens needs camera access to identify plants.",
+        "NSPhotoLibraryUsageDescription": "PlantLens needs photo library access to identify plants from your gallery."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F1F8F1",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.aashi.plantlens"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "PlantLens needs camera access to identify plants."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PlantLens needs photo library access to identify plants from your gallery."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "357f00d1-4358-4bd3-af99-de4811b79ca1"
+      }
+    }
+  }
+}
