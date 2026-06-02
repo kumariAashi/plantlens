@@ -45,7 +45,7 @@ def identify():
         details = get_plant_details(sci, top.get("common_name", ""))
         local_names = get_local_names(sci)
         toxicity = get_toxicity(sci)
-        ayurveda = get_ayurvedic_info(sci)
+        ayurveda = get_ayurvedic_info(sci, top.get("common_name", ""))
 
     # Save to session history
     history = session.get("history", [])
