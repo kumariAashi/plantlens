@@ -1,27 +1,53 @@
+import os
+from urllib.parse import quote
+
 import requests
 
 
-def get_plant_details(scientific_name: str) -> dict:
+WIKIPEDIA_SUMMARY_URL = "https://en.wikipedia.org/api/rest_v1/page/summary"
+WIKIMEDIA_USER_AGENT = os.getenv(
+    "WIKIMEDIA_USER_AGENT",
+    "PlantLens/1.0 (educational plant identification app)",
+)
+
+
+def get_plant_details(scientific_name: str, common_name: str = "") -> dict:
     """Fetch summary and thumbnail from Wikipedia."""
     if not scientific_name:
         return {}
 
-    slug = scientific_name.replace(" ", "_")
-    url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{slug}"
+    search_names = [scientific_name]
+    if common_name and common_name.lower() != scientific_name.lower():
+        search_names.append(common_name)
+
     try:
-        res = requests.get(url, timeout=5)
-        if res.status_code != 200:
-            return {}
-        data = res.json()
-        return {
-            "description": data.get("extract", "")[:500],
-            "thumbnail": data.get("thumbnail", {}).get("source", ""),
-            "wiki_url": data.get("content_urls", {})
-            .get("desktop", {})
-            .get("page", ""),
-        }
+        for name in search_names:
+            slug = quote(name.replace(" ", "_"))
+            url = f"{WIKIPEDIA_SUMMARY_URL}/{slug}"
+            res = requests.get(
+                url,
+                headers={"User-Agent": WIKIMEDIA_USER_AGENT},
+                timeout=5,
+            )
+            if res.status_code != 200:
+                continue
+
+            data = res.json()
+            description = data.get("extract", "")
+            if not description:
+                continue
+
+            return {
+                "description": description[:500],
+                "thumbnail": data.get("thumbnail", {}).get("source", ""),
+                "wiki_url": data.get("content_urls", {})
+                .get("desktop", {})
+                .get("page", ""),
+            }
     except Exception:
         return {}
+
+    return {}
 
 
 def get_local_names(scientific_name: str) -> dict:
@@ -43,7 +69,10 @@ def get_local_names(scientific_name: str) -> dict:
     url = "https://query.wikidata.org/sparql"
     try:
         res = requests.get(
-            url, params={"query": query, "format": "json"}, timeout=8
+            url,
+            params={"query": query, "format": "json"},
+            headers={"User-Agent": WIKIMEDIA_USER_AGENT},
+            timeout=8,
         )
         if res.status_code != 200:
             return {}

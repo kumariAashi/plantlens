@@ -1,5 +1,15 @@
 # Change Log
 
+## Session - 2026-06-02
+
+- Decision: start a new task requested by the user: fix missing plant descriptions on the result page by fetching short descriptions from Wikipedia.
+- Changed `web/services/wikipedia.py`: added a Wikimedia `User-Agent` header for Wikipedia and Wikidata requests because Wikipedia returned HTTP 403 without it; added optional common-name fallback when the scientific-name summary has no usable extract.
+- Changed `web/routes/identify.py`: now passes the PlantNet common name into `get_plant_details()` so Wikipedia lookup can fall back from scientific name to common name.
+- Changed `web/app.py`: moved `load_dotenv()` before route imports so service modules can read `.env` values at import time, including API keys and optional `WIKIMEDIA_USER_AGENT`.
+- Verified `get_plant_details("Psidium guajava", "Guava")` with network access; it now returns a Wikipedia description, thumbnail, and wiki URL.
+- Verified Python syntax with `python -m compileall .` from `web/`; modules compiled successfully.
+- Verified Flask startup import with `python -c "import app; print('app import ok')"` from `web/`.
+
 ## Session - 2026-05-18
 
 - Created this `CHANGE_LOG.md` because no existing project continuity log was present at the project root.
@@ -11,21 +21,26 @@
 
 ## SESSION SUMMARY
 
-- Completed the user's request to analyze the `web/` folder.
-- Created `web/readme.md` as a detailed explanation document for college presentation use.
+- Completed the user's request to make plant descriptions populate from Wikipedia.
+- Fixed Wikipedia requests by adding a `User-Agent` header required by Wikimedia.
+- Added common-name fallback in the description lookup so plants can still resolve when the scientific-name page is missing or empty.
+- Fixed `.env` load order before route/service imports, which also resolves the previous PlantNet/Perenual API-key import-time issue.
+- Verified the Guava lookup returns a short Wikipedia description for `Psidium guajava`.
 - Verified Python source syntax with `python -m compileall .` from `web/`.
-- Confirmed a current implementation issue where `.env` values are loaded too late for module-level API key globals in PlantNet and Perenual services.
+- Verified `app` imports successfully from `web/`.
 
 ## CURRENT STATE
 
-- `web/readme.md` is complete and ready to use for explanation/presentation.
-- `CHANGE_LOG.md` exists at the project root for future continuity.
-- Git status shows two new untracked files: `CHANGE_LOG.md` and `web/readme.md`.
-- No previous `CODEBASE_KNOWLEDGE.md` or `CHANGE_LOG.md` content was available to resume from.
+- Result-page description data now comes from `web/services/wikipedia.py` with Wikimedia-compliant headers.
+- `web/routes/identify.py` passes both scientific name and common name to Wikipedia enrichment.
+- `web/app.py` now loads `.env` before importing route/service modules.
+- `web/readme.md` remains available as the college-presentation-ready project explanation.
+- Git status shows modified files: `CHANGE_LOG.md`, `web/app.py`, `web/routes/identify.py`, and `web/services/wikipedia.py`.
+- Git status also shows two pre-existing untracked upload images in `web/static/uploads/`: `3901e1db-12b3-444b-9db7-1627c4dbba75.jpg` and `718841c0-cdb1-4301-9f30-2f2927863ff2.jpg`.
 
 ## OPEN TASKS
 
-- Optional code fix: move `load_dotenv()` before route imports in `web/app.py`, or read API keys inside service functions, so local `.env` keys load correctly.
+- Optional config improvement: set `WIKIMEDIA_USER_AGENT` in `.env` to a project-specific value with contact information for production use.
 - Optional feature work: make alternative match selection functional on `templates/result.html`.
 - Optional feature work: make history "View Details" open a real saved result page.
 - Optional cleanup work: add automatic cleanup for old files in `web/static/uploads/`.
@@ -33,4 +48,4 @@
 
 ## HANDOFF MESSAGE
 
-Continue from: `web/readme.md` has been created with a full analysis of the Flask web app for college presentation. Python syntax was verified with `python -m compileall .` from `web/`. Important known issue: `web/app.py` loads `.env` after importing routes, but `services/plantnet.py` and `services/perenual.py` read API keys at import time, so local `.env` API keys may not load into those globals. Next useful task is to fix that env-loading order if the user wants code changes.
+Continue from: Plant descriptions were fixed. `web/services/wikipedia.py` now sends a Wikimedia `User-Agent` header and falls back from scientific name to common name; `web/routes/identify.py` passes the common name into that lookup. `web/app.py` now loads `.env` before route/service imports, fixing the previous import-time API-key issue. Verified `get_plant_details("Psidium guajava", "Guava")` returns a Wikipedia description, thumbnail, and URL. `python -m compileall .` and `python -c "import app; print('app import ok')"` passed from `web/`.

@@ -42,7 +42,7 @@ def identify():
     details, local_names, toxicity, ayurveda = {}, {}, {}, {}
     if top:
         sci = top["scientific_name"]
-        details = get_plant_details(sci)
+        details = get_plant_details(sci, top.get("common_name", ""))
         local_names = get_local_names(sci)
         toxicity = get_toxicity(sci)
         ayurveda = get_ayurvedic_info(sci)

@@ -1,10 +1,12 @@
-from flask import Flask, render_template
-from routes.identify import identify_bp
-from routes.history import history_bp
-from dotenv import load_dotenv
 import os
 
+from dotenv import load_dotenv
+from flask import Flask, render_template
+
 load_dotenv()
+
+from routes.history import history_bp
+from routes.identify import identify_bp
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "dev-secret-key")
